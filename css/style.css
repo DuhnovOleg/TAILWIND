@@ -1,0 +1,54 @@
+.drop {
+    position: relative;
+    display: inline-block;  
+}
+
+.but a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 16px;
+
+}
+
+
+
+.but {
+    background-color:whitesmoke;
+    color:black;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;  
+    width: 150px;
+    height: 43px;
+
+}
+
+.drop:hover .content {
+    display: block;
+}
+
+button:hover {
+    background-color: #ddd;   
+}
+
+.content a:hover {
+    background-color: #ddd;
+}
+
+.container{
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0 0;
+}
+
+table{
+	border-spacing: 5px; /*отступ внутри рамки*/
+	border: 2px solid black;
+	background-color: ;
+}
+
+td {
+    font-weight: bold;
+    border: 2px solid black;
+}
