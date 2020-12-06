@@ -1,54 +1,143 @@
-.drop {
-    position: relative;
-    display: inline-block;  
-}
-
-.but a{
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 16px;
-
-}
-
-
-
-.but {
-    background-color:whitesmoke;
-    color:black;
-    font-size: 16px;
-    border: none;
-    text-decoration: none;  
-    width: 150px;
-    height: 43px;
-
-}
-
-.drop:hover .content {
-    display: block;
-}
-
-button:hover {
-    background-color: #ddd;   
-}
-
-.content a:hover {
-    background-color: #ddd;
-}
-
-.container{
-    background-color:whitesmoke;
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: #6c7279;
     margin: 0;
-    padding: 0 0;
+
+    -webkit-font-smoothing: antialiased;/*Сглаживает шрифты*/
+    background-color: white;
 }
 
-table{
-	border-spacing: 5px; /*отступ внутри рамки*/
-	border: 2px solid black;
-	background-color: ;
+*,
+*:before,
+*:after{
+    box-sizing: border-box; /*нужная вещь*/
 }
 
-td {
-    font-weight: bold;
-    border: 2px solid black;
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
 }
+
+p{
+    margin: 0 0 10px;
+}
+
+/*----Container----*/
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*--------Header---------*/
+.header{
+    /*Эти стили делают картинку фоновой для всей шапки*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+}
+
+img{
+    width: 150px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0px;
+    border-bottom: 1px solid #515369;
+    align-items: center;/*выравнивание по горизонтальной линии*/
+}
+
+/*-------Nav--------*/
+.nav{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.nav__link{
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;/*Убрать подчёркивание*/
+    opacity: .75;/*прозрачность блоков*/
+
+    /*Плавные переходы каких-либо свойств*/
+    transition: opacity .1 linear;
+}
+
+.nav__link:hover{
+    opacity: 1;
+}
+
+/*-------Intro--------*/
+.intro{
+    height: 700px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;/*Каждый новый элемент будет начинаться с новой строки*/
+    justify-content: center;/*Выравнивание ячейки по центру блока интро*/
+
+    
+    background: url(https://aviamodeli.com/wp-content/uploads/2017/10/slider21.jpg);
+}
+
+.intro__inner{
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title{
+    font-size: 65px;
+    line-height: 1.1;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+.intro__subtitle {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #fff;   
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+/*-------Button--------*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+
+    transition: background .1s linear; /*плавный переход фона*/
+}
+
+.btn--red{
+    background-color: #e84545;
+}
+
+.btn--red:hover{
+    background-color:  #f73535;
+}
+
+
+
+
+
