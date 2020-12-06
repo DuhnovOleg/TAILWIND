@@ -1,54 +1,35 @@
-.drop {
-    position: relative;
-    display: inline-block;  
+th{
+	border: solid 0px black;
 }
-
-.but a{
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 16px;
-
+td{
+	border: solid 0px black;
 }
-
-
-
-.but {
-    background-color:whitesmoke;
-    color:black;
-    font-size: 16px;
-    border: none;
-    text-decoration: none;  
-    width: 150px;
-    height: 43px;
-
+img {
+	width: 100%;
+	height: 40px;
 }
-
-.drop:hover .content {
-    display: block;
+.logo{
+	width: 20%;
 }
-
-button:hover {
-    background-color: #ddd;   
+tw{
+	font-family: 'Major Mono Display', monospace;
+	font: 20px arial;
 }
-
-.content a:hover {
-    background-color: #ddd;
-}
-
-.container{
-    background-color:whitesmoke;
-    margin: 0;
-    padding: 0 0;
-}
-
 table{
-	border-spacing: 5px; /*отступ внутри рамки*/
-	border: 2px solid black;
-	background-color: ;
+	text-align:center;
+	color: white;
+	width: 100%;
+	background: #242428;
 }
-
-td {
-    font-weight: bold;
-    border: 2px solid black;
+.footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.top{
+	border: solid 0px black;
+}
+body{
+	margin: 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
