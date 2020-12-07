@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<title>TAILWIND</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dosis:wght@200&family=Lora:ital,wght@1,500&family=Montserrat:wght@100;200;300&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
 	</head>
@@ -41,12 +42,59 @@
 						<a href=""><img class="header__img" src="images/logo.jpg"></a>
 					</div>
 					<nav class="nav">
-						<a class="nav__link" href=""><h4>AIRBUS</h4></a>
+
+						<div class="drop">
+							<a class="nav__link" href="">AIRBUS</a>							
+							<div class="content">
+								<a href="">AIRBUS ACJ320 v1</a>
+								<a href="">AIRBUS ACJ320 v2</a>
+							</div>
+						</div>
+
+						<div class="drop">
 						<a class="nav__link" href="">BOEING</a>
+							<div class="content">
+								<a href="">BOEING BBJ</a>
+								<a href="">BOEING BBJOW</a>
+								<a href="">BOEING BBJX</a>
+							</div>
+						</div>
+
+						<div class="drop">
 						<a class="nav__link" href="">BOMBARDIER</a>
+							<div class="content">
+								<a href="">BOBMARDIER G.5000</a>
+								<a href="">BOBMARDIER G.EXPRESS</a>
+								<a href="">BOBMARDIER G.E.XRS</a>
+							</div>
+						</div>
+
+						<div class="drop">
 						<a class="nav__link" href="">GUELFSTREAM</a>
+							<div class="content">
+								<a href="">GUELFSTREAM G200</a>
+								<a href="">GUELFSTREAM G550</a>
+								<a href="">GUELFSTREAM IV SP</a>
+							</div>
+						</div>
+
+						<div class="drop">
 						<a class="nav__link" href="">HONDA</a>
-						<a class="nav__link color" href="">Авторизация</a>
+							<div class="content">
+								<a href="">HONDA v1</a>
+								<a href="">HONDA v2</a>
+								<a href="">HONDA v3</a>
+							</div>
+						</div>
+
+						<div class="drop">							
+						<a class="nav__link color" href="">АВТОРИЗАЦИЯ</a>
+							<div class="content">
+								<a href="">Войти</a>
+								<a href="">Зарегистрироваться</a>
+							</div>
+						</div>
+
 					</nav>
 				</div>
 			</div>
@@ -58,8 +106,9 @@
 			<div class="container">
 				<div class="works__inner">
 					<div class="works__title"><h1>BOEING<h1></div>
-					<div class="works__text">Надёжность, качество, скорость </div>
+					<div class="works__text">Надёжность, качество, скорость.</div>
 					<a class="btn btn--blue" href="">Buy</a>
+					<a class="btn btn--blue" href="">Подробнее</a>
 					<img src="images/samolet-1.png" alt="" class="works__photo">
 				</div>	
 			</div>
@@ -70,29 +119,33 @@
 		<div class="intro">
 			<div class="intro__item">			
 					<div class="intro__title"><h1>AIRBUS<h1></div>
-					<div class="intro__text">Лучшие среди лучших</div>
+					<div class="intro__text">Лучшие среди лучших.</div>
 					<a class="btn btn--blue" href="">Buy</a>
-				<img class="intro__photo" src="images/airbus.png" alt="">
+					<a class="btn btn--blue" href="">Подробнее</a>
+					<img class="intro__photo" src="images/airbus.png" alt="">
 			</div>	
 
-			<div class="intro__item back">			
+			<div class="intro__item back skill">			
 				<div class="intro__title"><h1>BOMBARDIER<h1></div>
-				<div class="intro__text">Летаем выше облаков</div>
+				<div class="intro__text">Летаем выше облаков.</div>
 				<a class="btn btn--blue" href="">Buy</a>
+				<a class="btn btn--blue" href="">Подробнее</a>
 				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
 			</div>	
 
-			<div class="intro__item">			
+			<div class="intro__item skill1">			
 				<div class="intro__title"><h1>GUELFSTREAM<h1></div>
-				<div class="intro__text">Новые модели, выдающиеся рекорды</div>
+				<div class="intro__text">Новые модели, выдающиеся рекорды.</div>
 				<a class="btn btn--blue" href="">Buy</a>
+				<a class="btn btn--blue" href="">Подробнее</a>
 				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
 			</div>	
 
-			<div class="intro__item">			
+			<div class="intro__item skill2">			
 				<div class="intro__title"><h1>HONDA<h1></div>
-				<div class="intro__text">Безопастность превыше всего</div>
+				<div class="intro__text">Безопастность превыше всего.</div>
 				<a class="btn btn--blue" href="">Buy</a>
+				<a class="btn btn--blue" href="">Подробнее</a>
 				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
 			</div>	
 		</div>	
@@ -100,45 +153,43 @@
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
-	
 				<div class="footer__inner">
 					<div class="footer__block">
 						<h4 class="footer__title">©TAILWIND Inc. 2020, все права защищены.</h4>
-						<h6 class="footer__titl">Контактные данные</h6>
-						<div class="footer__tit">Тел. 89996109250</div>
+						<h6 class="footer__titl">Контактные данные:</h6>
+						<div class="footer__tit">Тел. 8(999)-610-92-50</div>
 					</div>
 	
-						<div class="footer__block">
-							<h4 class="footer__title">Социальные сети</h4>
-							<div class="social social--footer">
-								<a class="social__item" href="" target="_blank">
-									<svg class="social__icon">
-										<use xlink:href="#facebook"></use>
-									</svg>
-								</a>
-								<a class="social__item" href="" target="_blank">
-									<svg class="social__icon">
-										<use xlink:href="#twitter"></use>
-									</svg>
-								</a>
-								<a class="social__item" href="" target="_blank">
-									<svg class="social__icon">
-										<use xlink:href="#vk"></use>
-									</svg>
-								</a>
-							</div>
+					<div class="footer__block">
+						<h4 class="footer__title">Социальные сети</h4>
+						<div class="social social--footer">
+							<a class="social__item" href="" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+							<a class="social__item" href="" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+							<a class="social__item" href="" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#vk"></use>
+								</svg>
+							</a>
 						</div>
+					</div>
 	
-						<div class="footer__block">
-							<h4 class="footer__title">Место нахождения</h4>
-							<div class="footer__text">
-								<address class="footer__address">
-									<div>Пензенский Государственный Университет</div>
-									<div>Улица Красная 40</div>
-								</address>
-							</div>
+					<div class="footer__block">
+						<h4 class="footer__title">Место расположения.</h4>
+						<div class="footer__text">
+							<address class="footer__address">
+								<div>Пензенский Государственный Университет</div>
+								<div>Улица Красная 40.</div>
+							</address>
 						</div>
-	
+					</div>
 				</div>
 			</div>            
 		</footer>
