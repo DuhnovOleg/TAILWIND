@@ -40,6 +40,7 @@ p{
     z-index: 1000;
     height: 70px;
     background:rgb(26, 26, 29, .9);
+    backdrop-filter: blur(8px);
 }
 
 .header__inner{
