@@ -4,57 +4,144 @@
 		<meta charset="UTF-8">
 		<link href="css/style.css" rel="stylesheet" type="text/css"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dosis:wght@200&family=Lora:ital,wght@1,500&family=Montserrat:wght@100;200;300&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<div class="top"><table align="center">
-			<tr>
-				<div class="logo"><th rowspan="2"><img src="d:\ТРИР\Lab_6\a.jpg"></th></div>
-				<div class="tw"><th colspan="5" align="left">TAILWIND</th></div>
-				<th>Авторизация</th>
-			</tr>
-			
-			<tr>
-				<td>AIRBUS</td>
-				<td>BOEING</td>
-				<td>BOMBARDIER</td>
-				<td>GUELFSTREAM</td>
-				<td>HONDA</td>
-				<td>ACCESSORIES</td>
-			</tr>
-		</table></div>
+
+		<!-- Sprite -->
+		<svg style="display: none">
+
+			<symbol id="facebook" viewBox="0 0 430.113 430.114">
+				<g>
+					<path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+						c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+						c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+				</g>
+			</symbol>  
 		
-		<div class="footer">
-			<table>
-				<tr>
-					<td align="left">История производителей</td>
-					<td align="left">Контакты</td>
-					<td align="left">Отзывы</td>
-					<td align="left">О нас</td>
-				</tr>
-				<tr>
-					<td align="left">AIRBUS</td>
-					<td rowspan="5" align="left">Собственно контакты</td>
-					<td rowspan="5" align="left"></td>
-					<td rowspan="5" align="left"></td>
-				</tr>
-				<tr>
-					<td align="left">BOEING</td>
-				</tr>
-				<tr>
-					<td align="left">BOMBARDIER</td>
-				</tr>
-				<tr>
-					<td align="left">GUELFSTREAM</td>
-				</tr>
-				<tr>
-					<td align="left">HONDA</td>
-				</tr>
-			</table>
+			<symbol id="twitter" viewBox="-21 -81 681.33464 681">
+				<g>
+					<path d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094"/>
+				</g>
+			</symbol>
+		
+			<symbol id="vk" viewBox="0 0 24 24">
+				<g>
+					<path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
+				</g>
+			</symbol>
+		</svg>   
+
+		<!--Header-->   
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a href=""><img class="header__img" src="images/logo.jpg"></a>
+					</div>
+					<nav class="nav">
+						<a class="nav__link" href=""><h4>AIRBUS</h4></a>
+						<a class="nav__link" href="">BOEING</a>
+						<a class="nav__link" href="">BOMBARDIER</a>
+						<a class="nav__link" href="">GUELFSTREAM</a>
+						<a class="nav__link" href="">HONDA</a>
+						<a class="nav__link color" href="">Авторизация</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+
+		<!-- Works -->
+		<div class="works">
+			<div class="container">
+				<div class="works__inner">
+					<div class="works__title"><h1>BOEING<h1></div>
+					<div class="works__text">Надёжность, качество, скорость </div>
+					<a class="btn btn--blue" href="">Buy</a>
+					<img src="images/samolet-1.png" alt="" class="works__photo">
+				</div>	
+			</div>
 		</div>
 
-		<!--  -->
+
+		<!-- Intro -->
+		<div class="intro">
+			<div class="intro__item">			
+					<div class="intro__title"><h1>AIRBUS<h1></div>
+					<div class="intro__text">Лучшие среди лучших</div>
+					<a class="btn btn--blue" href="">Buy</a>
+				<img class="intro__photo" src="images/airbus.png" alt="">
+			</div>	
+
+			<div class="intro__item back">			
+				<div class="intro__title"><h1>BOMBARDIER<h1></div>
+				<div class="intro__text">Летаем выше облаков</div>
+				<a class="btn btn--blue" href="">Buy</a>
+				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
+			</div>	
+
+			<div class="intro__item">			
+				<div class="intro__title"><h1>GUELFSTREAM<h1></div>
+				<div class="intro__text">Новые модели, выдающиеся рекорды</div>
+				<a class="btn btn--blue" href="">Buy</a>
+				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
+			</div>	
+
+			<div class="intro__item">			
+				<div class="intro__title"><h1>HONDA<h1></div>
+				<div class="intro__text">Безопастность превыше всего</div>
+				<a class="btn btn--blue" href="">Buy</a>
+				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
+			</div>	
+		</div>	
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+	
+				<div class="footer__inner">
+					<div class="footer__block">
+						<h4 class="footer__title">©TAILWIND Inc. 2020, все права защищены.</h4>
+						<h6 class="footer__titl">Контактные данные</h6>
+						<div class="footer__tit">Тел. 89996109250</div>
+					</div>
+	
+						<div class="footer__block">
+							<h4 class="footer__title">Социальные сети</h4>
+							<div class="social social--footer">
+								<a class="social__item" href="" target="_blank">
+									<svg class="social__icon">
+										<use xlink:href="#facebook"></use>
+									</svg>
+								</a>
+								<a class="social__item" href="" target="_blank">
+									<svg class="social__icon">
+										<use xlink:href="#twitter"></use>
+									</svg>
+								</a>
+								<a class="social__item" href="" target="_blank">
+									<svg class="social__icon">
+										<use xlink:href="#vk"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+	
+						<div class="footer__block">
+							<h4 class="footer__title">Место нахождения</h4>
+							<div class="footer__text">
+								<address class="footer__address">
+									<div>Пензенский Государственный Университет</div>
+									<div>Улица Красная 40</div>
+								</address>
+							</div>
+						</div>
+	
+				</div>
+			</div>            
+		</footer>
 
 	</body>
 </html>
