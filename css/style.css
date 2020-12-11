@@ -141,6 +141,8 @@ p{
     margin-right: 15px;
 
     transition: background .2s linear; /*плавный переход фона*/
+
+    width: 160px;
 }
 
 .btn--blue{
