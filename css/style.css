@@ -46,12 +46,12 @@ p{
 .header__inner{
     display: flex;
     justify-content: space-between;
-    padding: 9px 0px;
+    padding: 1px 0px;
     align-items: center;/*выравнивание по горизонтальной линии*/
 }
 
 .header__img{
-    width: 150px;
+    width: 180px;
 }
 
 /*-------Nav--------*/
@@ -143,6 +143,8 @@ p{
     transition: background .2s linear; /*плавный переход фона*/
 
     width: 160px;
+
+    justify-content: center;
 }
 
 .btn--blue{
@@ -158,18 +160,42 @@ p{
     text-align: center;
 }
 
+.btn1 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+    padding: 14px 40px;
+
+    border-radius: 30px;
+    border: 0;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+    transition: background .2s linear; /*плавный переход фона*/
+
+    width: 250px;
+    text-align: center;
+
+    justify-content: center;
+}
+
 /* Intro */
 .intro {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 19px;
     background: #fcfcfc;
     padding: 0px;
     margin: 0;
 }
 
 .intro__photo {
-    height: 450px;
+    height: 550px;
 }
 
 .intro__item {
@@ -178,6 +204,7 @@ p{
     text-align: center;
     padding: 0 0; 
     max-width: 970px;
+    
 
     border-left: 15px solid #fff;
     border-top: 15px solid #fff;
@@ -349,4 +376,40 @@ p{
 
 .content a:hover {
     background-color: #fff;
+}
+
+/* Register */
+.ok{
+    margin-left: auto;
+    margin-right: auto;
+    width: 22em;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 235px;
+    margin-bottom: 236px;
+}
+
+.open {
+   color: #7c9ab7;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.reg {
+   margin: 20px 20px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+}
+
+input {
+   margin: 10px 0;
+   padding: 10px;
+   border: unset;
+   border-bottom: 2px solid #e3e3e3;
+   outline: none;
 }

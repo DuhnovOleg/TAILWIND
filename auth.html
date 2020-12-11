@@ -1,16 +1,13 @@
-<!DOCTYPE html> 
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-		<title>TAILWIND</title>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dosis:wght@200&family=Lora:ital,wght@1,500&family=Montserrat:wght@100;200;300&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация и регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-	<body>
-
-		<!-- Sprite -->
+    <!-- Sprite -->
 		<svg style="display: none">
 
 			<symbol id="facebook" viewBox="0 0 430.113 430.114">
@@ -34,7 +31,7 @@
 			</symbol>
 		</svg>   
 
-		<!--Header-->   
+    <!--Header-->   
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
@@ -98,54 +95,25 @@
 					</nav>
 				</div>
 			</div>
-		</header>
-		
+        </header>
+        
+    <!-- Форма авторизации -->
+    <div class="ok">
+		<div class="container">
+        <form>
+            <label>Логин</label>
+            <input type="text" name="login" placeholder="Введите свой логин">
+            <label>Пароль</label>
+            <input type="password" name="pass" placeholder="Введите пароль">
+            <a class="btn1 btn--blue" href="index.html">Войти</a>
+            <p class="reg">
+                У вас нет аккаунта? - <a class="open" href="register.html">зарегистрируйтесь</a>!
+            </p>
+		</form>
+	</div>
+    </div>  
 
-		<!-- Works -->
-		<div class="works">
-			<div class="container">
-				<div class="works__inner">
-					<div class="works__title"><h1>BOEING<h1></div>
-					<div class="works__text">Надёжность, качество, скорость.</div>
-					<a class="btn btn--blue" href="">Купить</a>
-					<img src="images/samolet-1.png" alt="" class="works__photo">
-				</div>	
-			</div>
-		</div>
-
-
-		<!-- Intro -->
-		<div class="intro">
-			<div class="intro__item">			
-					<div class="intro__title"><h1>AIRBUS<h1></div>
-					<div class="intro__text">Лучшие среди лучших.</div>
-					<a class="btn btn--blue" href="">Купить</a>
-					<img class="intro__photo" src="images/airbus.png" alt="">
-			</div>	
-
-			<div class="intro__item back skill">			
-				<div class="intro__title"><h1>BOMBARDIER<h1></div>
-				<div class="intro__text">Летаем выше облаков.</div>
-				<a class="btn btn--blue" href="">Купить</a>
-				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
-			</div>	
-
-			<div class="intro__item skill1">			
-				<div class="intro__title"><h1>GUELFSTREAM<h1></div>
-				<div class="intro__text">Новые модели, выдающиеся рекорды.</div>
-				<a class="btn btn--blue" href="">Купить</a>
-				<img class="intro__photo" src="images/samolet1.png" alt="">
-			</div>	
-
-			<div class="intro__item skill2">			
-				<div class="intro__title"><h1>HONDA<h1></div>
-				<div class="intro__text">Безопастность превыше всего.</div>
-				<a class="btn btn--blue" href="">Купить</a>
-				<img class="intro__photo" src="images/BOMBARDIER.png" alt="">
-			</div>	
-		</div>	
-
-		<!-- Footer -->
+    	<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__inner">
@@ -188,6 +156,5 @@
 				</div>
 			</div>            
 		</footer>
-
-	</body>
+</body>
 </html>
