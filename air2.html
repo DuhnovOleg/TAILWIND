@@ -1,12 +1,14 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<title>Slick слайдер</title>
+		<link rel="stylesheet" href="cssstyle/main.css">
 		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="shortcut icon" href="images/logotype.png" type="image/x-icon">
-		<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dosis:wght@200&family=Lora:ital,wght@1,500&family=Montserrat:wght@100;200;300&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+	</head>
 	<body>
 
 		<!-- Sprite -->
@@ -31,6 +33,7 @@
 					<path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
 				</g>
 			</symbol>
+
 		</svg>   
 
 		<!--Header-->   
@@ -98,52 +101,91 @@
 				</div>
 			</div>
 		</header>
-		
 
-		<!-- Works -->
-		<div class="works">
+		<!-- Text -->
+
+		<div class="text">
 			<div class="container">
-				<div class="works__inner">
-					<div class="works__title"><h1>BOEING<h1></div>
-					<div class="works__text">Надёжность, качество, скорость.</div>
-					<a class="btn btn--blue" href="Boeing.html">Подробнее</a>
-					<img src="images/samolet-1.png" alt="" class="works__photo">
-				</div>	
+				<h2 class="head__text">AIRBUS AC320 v2</h2>	
+				<div class="text__inner">
+					<div class="text__item">
+						<p class="text__inner__head">ТИП САМОЛЕТА</p>
+						<p class="text__inner__head">ГОД ВЫПУСКА</p>
+						<p class="text__inner__head">ЦЕНА</p>
+					</div>	
+					<div class="text__item">
+						<p class="text__inner__head1">Бизнес-лайнеры</p>
+						<p class="text__inner__head1">2008</p>
+						<p class="text__inner__head1"> $ 72 млн.</p>
+					</div>	
+				</div>
 			</div>
 		</div>
 
+		<center><a class="btn1 btn--blue teg" href="pay.html">Купить</a></center>
+
+		<div class="wrapper">
+
+			<div class="slider">
+				<div class="slider__item filter">
+					<img class="img" src="images/AIRBUS/AIRBUS-ACJ320-2.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img class="img" src="images/photo/k1.jpg" alt="">
+				</div>
+				<div class="slider__item filter">
+					<img class="img" src="images/AIRBUS/AIRBUS-ACJ320-3.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img class="img" src="images/photo/m1.jpg" alt="">
+				</div>
+			</div>
+			
+			<!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!-- Подключаем файл скриптов -->
+			<script src="js/script.js"></script>
+		</div>
 
 
-		<!-- Intro -->
-		<div class="intro">
-			<div class="intro__item">			
-					<div class="intro__title"><h1>AIRBUS<h1></div>
-					<div class="intro__text">Лучшие среди лучших.</div>
-					<a class="btn btn--blue" href="Airbus.html">Подробнее</a>
-					<img class="intro__photo" src="images/airbus.png" alt="">
-			</div>	
+				<!-- Bottom -->
 
-			<div class="intro__item back skill">			
-				<div class="intro__title"><h1>BOMBARDIER<h1></div>
-				<div class="intro__text">Летаем выше облаков.</div>
-				<a class="btn btn--blue" href="Bombardier.html">Подробнее</a>
-				<img class="intro__photo b" src="Photos/itog.png" alt="">
-			</div>	
+				<div class="text">
+					<div class="container">
+						<h2 class="head__text">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>	
+						<div class="text__inner">
+							<div class="text__item">
+								<p class="text__inner__head">ДАЛЬНОСТЬ ПОЛЕТА</p>
+								<p class="text__inner__head">КРЕЙСЕРСКАЯ СКОРОСТЬ</p>
+								<p class="text__inner__head">ОБЩАЯ ВМЕСТИМОСТЬ</p>
+							</div>	
+							<div class="text__item">
+								<p class="text__inner__head1">7 800 км</p>
+								<p class="text__inner__head1">898 км/ч</p>
+								<p class="text__inner__head1"> 19 ч</p>
+							</div>	
+						</div>
+					</div>
+				</div>
 
-			<div class="intro__item skill1">			
-				<div class="intro__title"><h1>GUELFSTREAM<h1></div>
-				<div class="intro__text">Новые модели, выдающиеся рекорды.</div>
-				<a class="btn btn--blue" href="Guelfstream.html">Подробнее</a>
-				<img class="intro__photo" src="images/samolet1.png" alt="">
-			</div>	
 
-			<div class="intro__item skill2">			
-				<div class="intro__title"><h1>HONDA<h1></div>
-				<div class="intro__text">Безопастность превыше всего.</div>
-				<a class="btn btn--blue" href="Honda.html">Подробнее</a>
-				<img class="intro__photo" src="images/honda.png" alt="">
-			</div>	
-		</div>	
+				<div class="text cool">
+					<div class="container">
+						<h2 class="head__text">Информация о самолёте</h2>
+						<p class="big">ACJ320 v2 — самый компактный и доступный из бизнес-лайнеров Airbus, что, впрочем, не мешает ему уверенно лидировать в своем классе по простору салона. Он создан на базе пассажирского самолета А318. Лайнеры без интерьера, с дополнительными топливными баками и некоторыми другими модификациями оборудуют салоном в собственном центре комплектации Airbus либо поставляют в один из других центров для воплощения дизайнерского проекта.</p>
+
+						<p class="big">Оборудованный электродистанционной системой управления ACJ318 сертифицирован для эксплуатации в сложных аэропортах, таких, как London City, в который он проходит как по требованиям к глиссаде, так и по уровню шума. </p>
+						<h3>Интерьер</h3>
+
+						<p class="big">Хотя по внешним габаритам и занимаемой на перроне площади ACJ318 не сильно отличается от традиционных бизнес-джетов дальнего класса, внутри он гораздо просторнее даже лайнеров BBJ, что достигается за счет более широкого и высокого салона. Благодаря большому объему в интерьере создается домашний уют, недоступный на более легких джетах. В стандартной компоновке может разместиться до 19 человек. Здесь хватает места и для отдельной спальни, и для душевой кабины, и для просторной гостиной с телевизором и обеденным залом. Лайнер оборудован системой трехзонного климат-контроля и новейшим электронным блоком управления системами салона с сенсорным пультом. </p>
+
+						<h3>Модификации</h3>
+						<p class="big cool">Модификация A318 Elite основана на коммерческом пассажирском авиалайнере Airbus A318, имеет те же крылья, что и ACJ319CJ Corporate Jetliner и ACJ320 Prestige, но его укороченный фюзеляж обеспечивает более высокую взлетную производительность. Самолет сертифицирован для работы в (LCY) London City Airport.</p>
+					</div>
+				</div>
+
 
 		<!-- Footer -->
 		<footer class="footer">
@@ -188,10 +230,6 @@
 				</div>
 			</div>            
 		</footer>
-
-		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-		<script src="javascript/script.js"></script>
-
 
 	</body>
 </html>
