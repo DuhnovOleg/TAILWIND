@@ -9,12 +9,12 @@
 
 .wrapper{
 	height: 100%;
-	padding: 50px;
+	padding: 20px;
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	margin-bottom: 150px;
-	margin-top: 143px;
+	margin-bottom: 120px;
+	margin-top: 120px;
 }
 
 @media (max-width:767px){
@@ -111,7 +111,8 @@
 
 .text__inner{
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 
 .head__text{
@@ -120,13 +121,27 @@
 	margin-top: 100px;
 	text-align: center;
 	color: black;
+	padding: 20px;
 }
 
 .text__inner__head{
-	font-size: 15px;
+	font-size: 18px;
 	padding: 10px;
+	line-height: 1.2;
 }
 
-.text__item{
-	width: 50%;
+.text__inner__head1{
+	font-size: 18px;
+	padding: 10px;
+	margin-left: 810px;
+	line-height: 1.4;
+}
+
+.big{
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.cool{
+	margin-bottom: 150px;
 }
