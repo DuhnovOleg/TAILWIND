@@ -1,14 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
+		<title>Slick слайдер</title>
+		<link rel="stylesheet" href="cssstyle/main.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
 		<meta charset="UTF-8">
-		<link href="css/style.css" rel="stylesheet">
-        <title>TAILWIND</title>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dosis:wght@200&family=Lora:ital,wght@1,500&family=Montserrat:wght@100;200;300&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
 	</head>
-
 	<body>
 
 		<!-- Sprite -->
@@ -33,6 +31,7 @@
 					<path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
 				</g>
 			</symbol>
+
 		</svg>   
 
 		<!--Header-->   
@@ -47,7 +46,7 @@
 						<div class="drop">
 							<a class="nav__link" href="">AIRBUS</a>							
 							<div class="content">
-								<a href="pages/air1.html">AIRBUS ACJ320 v1</a>
+								<a href="air1.html">AIRBUS ACJ320 v1</a>
 								<a href="pages/air2.html">AIRBUS ACJ320 v2</a>
 							</div>
 						</div>
@@ -99,23 +98,56 @@
 					</nav>
 				</div>
 			</div>
-        </header>
-        
-        <!-- Reviews -->
-		<div class="reviews">
-            <div class="container">
+		</header>
 
-                <div class="reviewsSlider">
-                    <div class="revews__item">
-                        <div class="rewiews__photo">
-                            <img src="images/AIRBUS/AIRBUS-ACJ320-1.jpg" alt="" class="reviews__img">
-                        </div>
-                    </div>
-                </div>
+		<!-- Text -->
 
-            </div>
-        </div>
+		<div class="text">
+			<div class="container">
+				<h2 class="head__text">AIRBUS AC320</h2>	
+				<div class="text__inner">
+					<div class="text__item">
+						<span class="text__inner__head"><p>ТИП САМОЛЕТА</p></span>
+						<span class="text__inner__head"><p>ГОД ВЫПУСКА</p></span>
+						<span class="text__inner__head"><p>ЦЕНА</p></span>
+						<span class="text__inner__head"><p>РЕФЕРЕНС НОМЕР</p></span>
+					</div>	
+					<div class="text__item">
+						<span class="text__inner__head"><p>ТИП САМОЛЕТА</p></span>
+						<span class="text__inner__head"><p>ГОД ВЫПУСКА</p></span>
+						<span class="text__inner__head"><p>ЦЕНА</p></span>
+						<span class="text__inner__head"><p>РЕФЕРЕНС НОМЕР</p></span>
+					</div>	
+				</div>
+			</div>
+		</div>
 
+		<div class="wrapper">
+
+			<div class="slider">
+				<div class="slider__item filter">
+					<img class="img" src="images/AIRBUS/AIRBUS-ACJ320-1.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img class="img" src="images/AIRBUS/AIRBUS-ACJ320-2.jpg" alt="">
+				</div>
+				<div class="slider__item filter">
+					<img class="img" src="images/AIRBUS/AIRBUS-ACJ320-3.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img class="img" src="img/slides/big/05.jpg" alt="">
+				</div>
+			</div>
+			
+			<!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!-- Подключаем файл скриптов -->
+			<script src="js/script.js"></script>
+		</div>
+
+		
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
@@ -158,12 +190,7 @@
 					</div>
 				</div>
 			</div>            
-        </footer>
-        
-    <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="javascript/script.js"></script>
-	<script src="javascript/jquery-3.4.1.min.js"></script>
+		</footer>
 
 	</body>
 </html>

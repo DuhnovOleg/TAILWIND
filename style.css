@@ -1,0 +1,54 @@
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+/* Контейнер слайдеров */
+.slider{
+    position: relative;
+    padding: 0 50px;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.slider .slick-dots li button{
+    font-size: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
