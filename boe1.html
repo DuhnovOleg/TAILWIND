@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slick слайдер</title>
+		<link rel="stylesheet" href="cssstyle/main.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link rel="shortcut icon" href="images/logotype.png" type="image/x-icon">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+
+		<!-- Sprite -->
+		<svg style="display: none">
+
+			<symbol id="facebook" viewBox="0 0 430.113 430.114">
+				<g>
+					<path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+						c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+						c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+				</g>
+			</symbol>  
+		
+			<symbol id="twitter" viewBox="-21 -81 681.33464 681">
+				<g>
+					<path d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094"/>
+				</g>
+			</symbol>
+		
+			<symbol id="vk" viewBox="0 0 24 24">
+				<g>
+					<path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
+				</g>
+			</symbol>
+
+		</svg>   
+
+		<!--Header-->   
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a href="index.html"><img class="header__img" src="images/logo10.png"></a>
+					</div>
+					<nav class="nav">
+
+						<div class="drop">
+							<a class="nav__link" href="">AIRBUS</a>							
+							<div class="content">
+								<a href="air1.html">AIRBUS ACJ320 v1</a>
+								<a href="air2.html">AIRBUS ACJ320 v2</a>
+							</div>
+						</div>
+
+						<div class="drop">
+						<a class="nav__link" href="">BOEING</a>
+							<div class="content">
+								<a href="boe1.html">BOEING BBJ</a>
+								<a href="boe2.html">BOEING BBJOW</a>
+								<a href="boe3.html">BOEING BBJX</a>
+							</div>
+						</div>
+
+						<div class="drop">
+						<a class="nav__link" href="">BOMBARDIER</a>
+							<div class="content">
+								<a href="bomb1.html">BOBMARDIER G.5000</a>
+								<a href="bomb2.html">BOBMARDIER G.EXPRESS</a>
+								<a href="bomb3.html">BOBMARDIER G.E.XRS</a>
+							</div>
+						</div>
+
+						<div class="drop">
+						<a class="nav__link" href="">GUELFSTREAM</a>
+							<div class="content">
+								<a href="gue1.html">GUELFSTREAM G200</a>
+								<a href="gue2.html">GUELFSTREAM G550</a>
+								<a href="gue3.html">GUELFSTREAM IV SP</a>
+							</div>
+						</div>
+
+						<div class="drop">
+						<a class="nav__link" href="">HONDA</a>
+							<div class="content">
+								<a href="hon1.html">HONDA v1</a>
+								<a href="hon2.html">HONDA v2</a>
+								<a href="hon3.html">HONDA v3</a>
+							</div>
+						</div>
+
+						<div class="drop">							
+						<a class="nav__link color" href="">АВТОРИЗАЦИЯ</a>
+							<div class="content">
+								<a href="auth.html">Войти</a>
+								<a href="register.html">Зарегистрироваться</a>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Text -->
+
+		<div class="text">
+			<div class="container">
+				<h2 class="head__text">BOEING BBJ</h2>	
+				<div class="text__inner">
+					<div class="text__item">
+						<p class="text__inner__head">ТИП САМОЛЕТА</p>
+						<p class="text__inner__head">ГОД ВЫПУСКА</p>
+						<p class="text__inner__head">ЦЕНА</p>
+					</div>	
+					<div class="text__item">
+						<p class="text__inner__head1">Бизнес-лайнеры</p>
+						<p class="text__inner__head1">2016</p>
+						<p class="text__inner__head1"> $ 71 млн.</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<center><a class="btn1 btn--blue teg" href="pay.html">Купить</a></center>
+
+		<div class="wrapper">
+
+			<div class="slider">
+				<div class="slider__item filter">
+					<img class="img" src="images/BOEING/BOEING-BBJ-1.png" alt="">
+				</div>
+				<div class="slider__item">
+					<img class="img" src="images/BOEING/BOEING-BBJ-2.jpg" alt="">
+				</div>
+				<div class="slider__item filter">
+					<img class="img" src="images/BOEING/BOEING-BBJ-3.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img class="img" src="images/photo/k3.jpeg" alt="">
+				</div>
+			</div>
+			
+			<!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!-- Подключаем файл скриптов -->
+			<script src="js/script.js"></script>
+		</div>
+
+
+				<!-- Bottom -->
+
+				<div class="text">
+					<div class="container">
+						<h2 class="head__text">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>	
+						<div class="text__inner">
+							<div class="text__item">
+								<p class="text__inner__head">ДАЛЬНОСТЬ ПОЛЕТА</p>
+								<p class="text__inner__head">КРЕЙСЕРСКАЯ СКОРОСТЬ</p>
+								<p class="text__inner__head">ОБЩАЯ ВМЕСТИМОСТЬ</p>
+							</div>	
+							<div class="text__item">
+								<p class="text__inner__head1">11 519 км</p>
+								<p class="text__inner__head1">842 км/ч</p>
+								<p class="text__inner__head1">50 ч</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+
+				<div class="text cool">
+					<div class="container">
+						<h2 class="head__text">Информация о самолёте</h2>
+						<p class="big">Boeing Business Jet (BBJ) — это первый самолет, созданный для деловой авиации американской компанией Boeing. Он был разработан специально для представителей мировой элиты и корпоративных заказчиков. Вот уже почти 20 лет эта модель пользуется большой популярностью среди бизнесменов и частных владельцев. С восемью пассажирами самолет может преодолеть 12 964 км, что позволяет совершать беспосадочные перелеты из  Лондона в  Йоханнесбург, из Парижа в Лос-Анджелес или из Москвы во  Владивосток. </p>
+
+						<p class="big">Владельцы могут изменять конфигурацию салона в соответствии со своими потребностями. На борту достаточно места, чтобы создать комфортные условия как для работы, так и для отдыха. Интерьер самолета создается индивидуально для каждого заказчика. В салоне можно разместить не только просторную гостиную с массивной мебелью и деловой кабинет с большим рабочим столом, но  и  спальню с  «королевской» кроватью, вместительное багажное отделение, удобную функциональную кухню и отдельный санузел с полноразмерной душевой кабиной. Наличие на борту спутниковой системы связи дает возможность пассажирам независимо от местонахождения самолета поддерживать деловые контакты в любой точке планеты.</p>
+						<h3>Интерьер</h3>
+
+						<p class="big">BBJ сертифицирован для сверхдальних перелетов над протяженными водными пространствами, оснащен спутниковой системой навигации и перспективными комплексами аэронавигационного оборудования. Лайнеры BBJ демонстрируют одни из лучших в отрасли показатели точности соблюдения графика — 99,9%. Законцовки крыла винглеты повышают топливную экономичность на 5–7% и входят в стандартную комплектацию семейства BBJ, на обычных же Boeing 737 они являются дополнительным оборудованием. Модель оснащена дополнительными топливными баками и имеет сертификацию по ETOPS-180. Boeing Business Jet вмещает от 25 до 50 пассажиров в особо комфортных условиях. </p>
+
+						<h3>Модификации</h3>
+						<p class="big cool">Самый современный представитель этой модели — BBJ MAX 7, поставки которого запланированы на 2022 год. Ожидается, что именно BBJ MAX 7 будет самым популярным и продолжит славу своего предшественника BBJ. </p>
+					</div>
+				</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__block">
+						<h4 class="footer__title">©TAILWIND Inc. 2020, все права защищены.</h4>
+						<h6 class="footer__titl">Контактные данные:</h6>
+						<div class="footer__tit">Тел. 8(999)-610-92-50</div>
+					</div>
+	
+					<div class="footer__block">
+						<h4 class="footer__title">Социальные сети</h4>
+						<div class="social social--footer">
+							<a class="social__item" href="" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+							<a class="social__item" href="" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+							<a class="social__item" href="https://vk.com/id447460693" target="_blank">
+								<svg class="social__icon">
+									<use xlink:href="#vk"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+	
+					<div class="footer__block">
+						<h4 class="footer__title">Место расположения.</h4>
+						<div class="footer__text">
+							<address class="footer__address">
+								<div>Пензенский Государственный Университет</div>
+								<div>Улица Красная 40.</div>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>            
+		</footer>
+
+	</body>
+</html>
